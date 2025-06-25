@@ -14,7 +14,7 @@ struct OnboardingView: View {
     
     var body: some View {
         TabView {
-            ForEach(0..<5, id: \.self) { item in
+            ForEach(0..<fruits.count, id: \.self) { item in
                 FruitCardView(fruitData: fruits[item])
             }
         }
